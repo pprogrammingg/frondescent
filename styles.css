@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr; /* Single column */
+  grid-template-rows: repeat(6, 50vh); /* 6 rows, each 50% of the viewport height */
+  height: 100vh;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 5em;
+}
+
+.box:nth-child(odd) {
+  background-color: #3498db;
+}
+
+.box:nth-child(even) {
+  background-color: #2ecc71;
+}
