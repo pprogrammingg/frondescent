@@ -3,7 +3,7 @@ body {
   margin: 0;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, 50vh);
+  grid-template-rows: 100vh repeat(5, 50vh);
   height: 100vh;
 }
 

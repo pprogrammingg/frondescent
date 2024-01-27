@@ -31,9 +31,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const boxes = document.querySelectorAll(".box");
 
     function updateOpacity() {
-      boxes.forEach((box) => {
+      boxes.forEach((box, index) => {
         const rect = box.getBoundingClientRect();
         const opacity = Math.max(0, Math.min(1, (window.innerHeight - rect.top) / window.innerHeight));
+        const transitionDuration = index === 0 ? "0.5s" : "0.6s"; // Adjust the duration for the first box
+        box.style.transition = `opacity ${transitionDuration} ease`;
         box.style.opacity = opacity.toFixed(2);
       });
     }
