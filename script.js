@@ -27,5 +27,17 @@ document.addEventListener("DOMContentLoaded", function () {
       ];
       return colorRanges[Math.floor(Math.random() * colorRanges.length)];
     }
+
+    const boxes = document.querySelectorAll(".box");
+
+    function updateOpacity() {
+      boxes.forEach((box) => {
+        const rect = box.getBoundingClientRect();
+        const opacity = Math.max(0, Math.min(1, (window.innerHeight - rect.top) / window.innerHeight));
+        box.style.opacity = opacity.toFixed(2);
+      });
+    }
+  
+    document.addEventListener("scroll", updateOpacity);
   });
   
