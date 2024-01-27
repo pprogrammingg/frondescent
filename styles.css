@@ -3,7 +3,7 @@ body {
   margin: 0;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100vh repeat(5, 50vh);
+  grid-template-rows: repeat(6, 90vh);
   height: 100vh;
 }
 
@@ -12,8 +12,15 @@ body {
   align-items: center;
   justify-content: center;
   height: 100%;
-  opacity: 0; /* Initially set opacity to 0 */
-  transition: opacity 0.6s ease; /* Smooth transition effect */
+}
+
+.text-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
 }
 
 #mist3 {
@@ -22,9 +29,13 @@ body {
 }
 
 .heart {
-  font-size: 5em;
-  margin: 0 0.2em;
+    width: 1em; 
+    height: 1em; 
+    margin: 0 0 0 1em;
+    fill: #8A2BE2;
+    transform: scale(2);
 }
+
 
 #changingWord {
   font-size: 5em;
