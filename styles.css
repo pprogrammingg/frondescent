@@ -14,32 +14,43 @@ body {
   height: 100%;
 }
 
-.text-container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-content: center;
-  justify-content: center;
+.box-content {
+  display: grid;
+  grid-template-rows: auto auto; /* Adjust rows to fit content */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px; /* Adjust gap as needed */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #mist3 {
   color: white;
   font-size: 5em;
+  grid-row: 1;  
+  grid-column: 1; /* Make #changingWord span two columns */
+  align-self: center; /* Center vertically within its cell */
 }
 
-.heart {
-    width: 1em; 
-    height: 1em; 
-    margin: 0 0 0 1em;
-    fill: #8A2BE2;
-    transform: scale(2);
+#heart {
+  grid-row: 1;
+  grid-column: 2 / span 2;
+  width: 8em;
+  height: 8em;
+  fill: #e21515;
+  justify-self: left; /* Center horizontally within its cell */
+  align-self: center; /* Center vertically within its cell */
 }
-
 
 #changingWord {
+  grid-column: 1 / span 3; /* Span two columns */
   font-size: 5em;
-  margin-left: 0.2em; /* Adjust this margin as needed */
+  white-space: nowrap; /* Prevent text from wrapping */
+  @media (max-width: 800px) {
+    white-space: normal; /* Allow text to wrap when screen width is 600px or less */
+  }
 }
 
 .box:nth-child(odd) {

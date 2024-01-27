@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "NFT MarketPlace",
       "DeFi",
       "CryptoCurrencies",
-      "Crypto in Games",
+      "On-Chain Games",
       "Smart Contracts",
       "Tokenization",
       "Decentralization"
