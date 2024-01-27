@@ -34,17 +34,10 @@ document.addEventListener("DOMContentLoaded", function () {
     function updateOpacity() {
       boxes.forEach((box, index) => {
         const rect = box.getBoundingClientRect();
-        
         let opacity;
         const scrollDirection = window.scrollY > 0 ? 'down' : 'up';
-
         opacity = Math.max(0, Math.min(1, ((window.innerHeight - Math.abs(rect.top)) / window.innerHeight)));
-
-
-
-        console.log(`direction ${scrollDirection} index ${index} opacity ${opacity} windows_inner_height ${window.innerHeight} rect.top ${rect.top} rect.bottom ${rect.bottom}`)
-        
-        
+        //console.log(`direction ${scrollDirection} index ${index} opacity ${opacity} windows_inner_height ${window.innerHeight} rect.top ${rect.top} rect.bottom ${rect.bottom}`
         const transitionDuration = scrollDirection === 'up' ? '0.3s' : '0.6s';
         box.style.transition = `opacity ${transitionDuration} ease`;
         box.style.opacity = opacity.toFixed(2);
