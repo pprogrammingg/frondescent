@@ -2,13 +2,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const changingWord = document.getElementById("changingWord");
     const words = [
       "Web3",
-      "NFT MarketPlace",
+      "NFT",
       "DeFi",
       "CryptoCurrencies",
       "On-Chain Games",
       "Smart Contracts",
       "Tokenization",
-      "Decentralization"
+      "Decentralization",
+      "Digital Assets"
     ];
     let currentIndex = 0;
   
@@ -24,6 +25,8 @@ document.addEventListener("DOMContentLoaded", function () {
       const colorRanges = [
         "#CCFF00",
         "#CCFF33",
+        "#c88125",
+        "#66d843"
       ];
       return colorRanges[Math.floor(Math.random() * colorRanges.length)];
     }
