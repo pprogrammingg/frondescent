@@ -25,8 +25,9 @@ document.addEventListener("DOMContentLoaded", function () {
       const colorRanges = [
         "#CCFF00",
         "#CCFF33",
-        "#c88125",
-        "#66d843"
+        "#f97342",
+        "#bdffc3",
+        "#40edc5"
       ];
       return colorRanges[Math.floor(Math.random() * colorRanges.length)];
     }

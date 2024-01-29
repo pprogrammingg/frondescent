@@ -45,7 +45,7 @@ body {
 #changingWord {
   font-size: 3em;
   grid-area: 4 / 4 / 4 / 4;
-  color: #66d843;
+  color: #CCFF00;
   overflow: clip ;
   white-space: nowrap;
 }
