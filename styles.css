@@ -9,8 +9,8 @@ body {
 
 #firstBox {
   display: grid;
-  grid-template-rows: minmax(50px, 1fr) repeat(3, minmax(25px, auto)) minmax(50px, 1fr);
-  grid-template-columns: minmax(100px, 300px) repeat(6, 50px);
+  grid-template-rows: 0.5fr repeat(3, minmax(25px, auto)) minmax(50px, 1fr);
+  grid-template-columns: 0.75fr repeat(6, 50px) 0.75fr;
   gap: 10px; 
   grid-auto-rows: auto;
 }
@@ -31,7 +31,7 @@ body {
   align-self: center;
 }
 
-.content.builds {
+.content.building {
   grid-area: 4/ 2 / 4 / 3 ;
   color: white;
   justify-self: left;
