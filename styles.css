@@ -10,7 +10,7 @@ body {
 #firstBox {
   display: grid;
   grid-template-rows: 0.5fr repeat(3, minmax(25px, auto)) minmax(50px, 1fr);
-  grid-template-columns: 0.75fr repeat(6, 50px) 0.75fr;
+  grid-template-columns: auto repeat(6, 50px) auto;
   gap: 10px; 
   grid-auto-rows: auto;
 }
@@ -25,14 +25,14 @@ body {
 }
 
 .content.heart {
-  grid-area: 3/ 2 / 3 / 2 ;
+  grid-area: 3 / 2 / 3 / 2 ;
   color: white;
   justify-self: left;
   align-self: center;
 }
 
 .content.building {
-  grid-area: 4/ 2 / 4 / 3 ;
+  grid-area: 4 / 2 / 4 / 3 ;
   color: white;
   justify-self: left;
   align-self: center;
