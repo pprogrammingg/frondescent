@@ -10,9 +10,13 @@ body {
 #firstBox {
   display: grid;
   grid-template-rows: 0.5fr repeat(3, minmax(25px, auto)) minmax(50px, 1fr);
-  grid-template-columns: 0.75fr repeat(6, 50px) 0.75fr;
+  grid-template-columns: minmax(0.24, 0.75fr) repeat(6, 50px) minmax(0.24, 0.75fr);
   gap: 10px; 
   grid-auto-rows: auto;
+}
+
+#content-wrapper-1 {
+
 }
 
 .content {

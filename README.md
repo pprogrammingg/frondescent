@@ -10,11 +10,10 @@
 
 ```json
 {
-    "date": "Fri Jan 26, 2023",
+    "date": "Jan26 - Feb 11, 2023",
     "features": [
-        1 : "6 stacked divs different colours mobile view(pass) minimal code (pass)",
-        2 : "what we do -- Font selection, Our Passion is rotate these words Web3, Decentralization, DeFi, NFT, Payment Systems "
-
+        1 : "Svelte Kit Start, Responsive CSS Grid Layout, Responsive Nav Bar, Populate 3 collections of NFTs based on Fake Data"
+        2 : "Solana Wallet Connect, Basic NFT Smart contract"
     ],
     "tested_on" : [
         "Android Phone"
